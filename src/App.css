@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.close,.hamburger, li{
+  cursor: pointer;
 }
+ul{
+  width: 80%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* nav {
+  display: none;
+} */
+@media screen and (max-width: 768px) {
+  /* .navigation-menu.expanded ul {
+    display: block;
+  } */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav {
+    /* previous styles */
+    display: none;
   }
-}
+  .nav.expanded {
+    display: flex;
+  }
+  .header .responsive_nav {
+    display: flex !important;
+  
+		transform: translateY(100vh);
+	}
+ /* nav .nav-close-btn{
+position: absolute;
+  } */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  nav{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+padding: .5em;
+   
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+  }
+
+}
+.intro{
+  background-image: url(./images/mobile-image-hero-1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+justify-content: space-between;}
+.header{
   color: white;
+  display: flex;
+  width: 70vw;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.hamburger{
+  width: 10%;
+}
+.angles{
+  background-color: black;
+  padding: .8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+}
+.angles-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+ 
+  width: 100%;
+
+}
+button{
+  background-color: transparent;
+  border: none;
+  /* color: white; */
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .65em;
+  margin: 2em 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+.text{
+  width: 80vw;
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.img > img{
+  width: 100%;
+  margin: 2em 0;
+ 
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+  font-size: 1em;
+  margin-top: 1em;
+  font-weight: 700;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+}
+h1{
+  font-size: 2em;
+  margin-top: 1em;
+  
+}
+p{
+  line-height: 1.7em;
+  color: gray;
+  margin: 0;
 }
