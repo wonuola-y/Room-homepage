@@ -26,8 +26,8 @@ function Available() {
     setIsNavExpanded(!isNavExpanded);
   };
   return (
-    <div className="App">
-      <section className="contain-main">
+    <section className="App">
+      <div className="contain-main">
         <div className="intro pg1">
           <div className="container">
             <div className="header">
@@ -85,11 +85,13 @@ function Available() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="about">
+      </div>
+      <div className="contain-sub">
+      
         <div className="img">
           <img src={about} alt="about" />
         </div>
+        <div className="sub-text">
         <div className="text">
           <h2>About our furniture</h2>
           <p>
@@ -101,13 +103,15 @@ function Available() {
             help you create your dream space.
           </p>
         </div>
-      </section>
-      <section>
+        </div>
+    
+      
         <div className="img">
           <img src={white} alt="white" />
-        </div>
-      </section>
-    </div>
+        
+      </div>
+      </div>
+    </section>
   );
 }
 

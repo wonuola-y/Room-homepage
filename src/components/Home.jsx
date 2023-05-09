@@ -23,9 +23,9 @@ function Home() {
     setIsNavExpanded(!isNavExpanded);
   };
   return (
-    <div className="App">
-   <section className="contain-main">
-   <section className="intro">
+    <section className="App">
+   <div className="contain-main">
+   <div className="intro">
         <div className="container">
           <div className="header">
             <img
@@ -58,8 +58,9 @@ function Home() {
             <img src={right} onClick={handleClick} />
           </div>
         </div>
-      </section>
-      <section className="text">
+      </div>
+      <div className="side">
+      <div className="text">
         <h1>Discover innovative ways to decorate</h1>
 
         <p>
@@ -77,8 +78,9 @@ function Home() {
             <img src={arrow} alt="arrow" />
           </button>
         </div>
-      </section>
-   </section>
+      </div>
+      </div>
+   </div>
       <section className="about">
         <div className="img">
           <img src={about} alt="about" />
@@ -100,7 +102,7 @@ function Home() {
           <img src={white} alt="white" />
         </div>
       </section>
-    </div>
+    </section>
   );
 }
 

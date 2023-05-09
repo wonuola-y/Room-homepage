@@ -23,8 +23,9 @@ function Manufactured() {
     setIsNavExpanded(!isNavExpanded);
   };
   return (
-    <div className="App">
-      <section className="intro pg2">
+    <section className="App">
+    <div className="contain-main">
+    <div className="intro pg2">
        <div className="container">
        <div className="header">
           <img
@@ -57,8 +58,9 @@ function Manufactured() {
             <img src={right} />
           </div>
         </div>
-      </section>
-      <section className="text">
+      </div>
+    <div className="side">
+    <div className="text">
         <h1> Manufactured with the best materials</h1>
 
         <p>
@@ -76,7 +78,9 @@ function Manufactured() {
             <img src={arrow} alt="arrow" />
           </button>
         </div>
-      </section>
+      </div>
+    </div>
+    </div>
       <section className="about">
         <div className="img">
           <img src={about} alt="about" />
@@ -98,7 +102,7 @@ function Manufactured() {
           <img src={white} alt="white" />
         </div>
       </section>
-    </div>
+    </section>
   );
 }
 
