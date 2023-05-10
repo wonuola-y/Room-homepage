@@ -86,30 +86,31 @@ function Available() {
           </div>
         </div>
       </div>
-      <div className="contain-sub">
+      <div className="about-contain">
       
-        <div className="img">
+      <div className="img">
           <img src={about} alt="about" />
         </div>
         <div className="sub-text">
-        <div className="text">
-          <h2>About our furniture</h2>
-          <p>
-            Our multifunctional collection blends design and function to suit
-            your individual taste. Make each room unique, or pick a cohesive
-            theme that best express your interests and what inspires you. Find
-            the furniture pieces you need, from traditional to contemporary
-            styles or anything in between. Product specialists are available to
-            help you create your dream space.
-          </p>
-        </div>
+          <div className="text">
+            <div>
+            <h2>About our furniture</h2>
+            <p>
+              Our multifunctional collection blends design and function to suit
+              your individual taste. Make each room unique, or pick a cohesive
+              theme that best express your interests and what inspires you. Find
+              the furniture pieces you need, from traditional to contemporary
+              styles or anything in between. Product specialists are available
+              to help you create your dream space.
+            </p>
+            </div>
+          </div>
         </div>
     
-      
+
         <div className="img">
           <img src={white} alt="white" />
-        
-      </div>
+        </div>
       </div>
     </section>
   );
